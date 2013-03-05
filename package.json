@@ -1,0 +1,21 @@
+{
+	"name":"willwashburn.com",
+	"version":"0.0.1",
+	"description":"Portfolio site for me, Will Washburn!",
+	"dependencies": {
+		"express":"3.x",
+		"underscore":"x",
+		"fs":"x",
+		"path":"~0.4.9",
+		"mongoose":"~3.5.5",
+		"lastfm":"0.8.x",
+		"twit":"x",
+		"github":"x",
+		"instagram-node-lib":"x",
+		"tumblr":"x"
+	},
+	"engines": {
+		"node":"0.8.x",
+	    "npm":"1.1.x"
+	}
+}
