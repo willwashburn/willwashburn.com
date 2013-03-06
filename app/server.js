@@ -1,6 +1,7 @@
 var express = require('express'),
     path = require('path'),
     mongoose = require('mongoose'),
+    hbs = require('hbs'),
     router = require('./routes'),
     config = require('./config');
 
@@ -11,6 +12,11 @@ app.configure(function() {
 
     app.use(express.bodyParser());
     app.use(express.methodOverride());
+
+    //Use handlebars.js
+    app.set('view engine', 'html');
+    app.engine('html', require('hbs').__express);
+
     app.use(app.router);
 
     app.use(function(req, res, next) {
@@ -25,12 +31,17 @@ app.configure(function() {
         showStack: true
     }));
 
+    app.use(function(req, res, next) {
+        res.render('404', {
+            status: 404,
+            url: req.url
+        });
+    });
 });
 
 router(app);
 
 var port = process.env.PORT || config.port;
-
 app.listen(port, function() {
     console.log('Express server listening on port %d in %s mode', port, app.settings.env);
 });
