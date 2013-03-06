@@ -15,10 +15,14 @@ app.configure(function() {
     app.use(express.methodOverride());
 
     //Use handlebars.js
-    app.set('view engine', 'html');
-    app.set('views',__dirname + '/views/');
+    app.engine('html', hbs.express3({
+        partialsDir: __dirname + '/views/partials',
+        layoutsDir: __dirname + '/views/layouts',
+        defaultLayout: __dirname + '/views/layouts/public.html'
+    }));
 
-    app.engine('html', require('hbs').__express);
+    app.set('view engine', 'html');
+    app.set('views', __dirname + '/views/');
 
     app.use(app.router);
 
@@ -35,7 +39,8 @@ app.configure(function() {
     }));
 
     app.use(function(req, res, next) {
-        res.render('public', {
+        res.status(404);
+        res.render('errors/404', {
             status: 404,
             url: req.url
         });

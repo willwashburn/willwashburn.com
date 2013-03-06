@@ -2,11 +2,8 @@ module.exports = function(app) {
 
     app.get('/', function(req, res) {
 
-        res.render('public', {
+        res.render('foundation', {
             status: 404,
-            partials: {
-                main_content: 'foundation'
-            }
         });
     });
 
