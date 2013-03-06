@@ -14,6 +14,7 @@ app.configure(function() {
     app.use(express.bodyParser());
     app.use(express.methodOverride());
 
+
     //Use handlebars.js
     app.engine('html', hbs.express3({
         partialsDir: __dirname + '/views/partials',
@@ -24,19 +25,20 @@ app.configure(function() {
     app.set('view engine', 'html');
     app.set('views', __dirname + '/views/');
 
-    app.use(app.router());
+  app.use(app.router);
 
     app.use(function(req, res, next) {
         console.log('%s %s', req.method, req.url);
         next();
     });
-
+    
     app.use(express.static(__dirname + '../../public'));
 
     app.use(express.errorHandler({
         dumpExceptions: true,
         showStack: true
     }));
+
 
     app.use(function(req, res, next) {
         res.status(404);
@@ -45,6 +47,8 @@ app.configure(function() {
             url: req.url
         });
     });
+
+
 });
 
 router(app);
