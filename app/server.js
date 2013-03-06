@@ -35,12 +35,29 @@ app.configure(function() {
     }));
 
     app.use(function(req, res, next) {
-        res.render('404', {
+        res.render('public', {
             status: 404,
             url: req.url
         });
     });
 });
+
+
+//Register Partials
+var partialsDir = __dirname + '/views/partials';
+
+var partials = fs.readdirSync(partialsDir);
+
+partials.forEach(function (filename) {
+  var matches = /^([^.]+).html$/.exec(filename);
+  if (!matches) {
+    return;
+  }
+  var name = matches[1];
+  var template = fs.readFileSync(partialsDir + '/' + filename, 'utf8');
+  hbs.registerPartial(name, template);
+});
+
 
 router(app);
 
