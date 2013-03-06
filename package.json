@@ -1,7 +1,13 @@
 {
 	"name":"willwashburn.com",
 	"version":"0.0.1",
+	"author":"Will Washburn <will@willwashburn.com>",
 	"description":"Portfolio site for me, Will Washburn!",
+	"main":"./app/server.js",
+	"repository":{
+		"type":"git",
+		"url":"git@github.com:willwashburn/willwashburn.com.git"
+	},
 	"dependencies": {
 		"express":"3.x",
 		"underscore":"x",
