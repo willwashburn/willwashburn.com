@@ -6,7 +6,7 @@
 		"express":"3.x",
 		"underscore":"x",
 		"fs":"x",
-		"hbs":"x",
+		"express-hbs":"x",
 		"path":"~0.4.9",
 		"mongoose":"~3.5.5",
 		"lastfm":"0.8.x",

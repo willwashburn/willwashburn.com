@@ -2,7 +2,7 @@ var express = require('express'),
     path = require('path'),
     fs = require('fs'),
     mongoose = require('mongoose'),
-    hbs = require('hbs'),
+    hbs = require('express-hbs'),
     router = require('./routes'),
     config = require('./config');
 
@@ -16,7 +16,7 @@ app.configure(function() {
 
     //Use handlebars.js
     app.set('view engine', 'html');
-    app.set('views',__dirname + '/views/layouts/');
+    app.set('views',__dirname + '/views/');
 
     app.engine('html', require('hbs').__express);
 
