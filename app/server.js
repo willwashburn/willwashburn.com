@@ -43,22 +43,6 @@ app.configure(function() {
 });
 
 
-//Register Partials
-var partialsDir = __dirname + '/views/partials';
-
-var partials = fs.readdirSync(partialsDir);
-
-partials.forEach(function (filename) {
-  var matches = /^([^.]+).html$/.exec(filename);
-  if (!matches) {
-    return;
-  }
-  var name = matches[1];
-  var template = fs.readFileSync(partialsDir + '/' + filename, 'utf8');
-  hbs.registerPartial(name, template);
-});
-
-
 router(app);
 
 var port = process.env.PORT || config.port;
