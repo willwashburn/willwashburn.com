@@ -1,5 +1,6 @@
 var express = require('express'),
     path = require('path'),
+    fs = require('fs'),
     mongoose = require('mongoose'),
     hbs = require('hbs'),
     router = require('./routes'),
@@ -15,6 +16,8 @@ app.configure(function() {
 
     //Use handlebars.js
     app.set('view engine', 'html');
+    app.set('views',__dirname + '/views/layouts/');
+
     app.engine('html', require('hbs').__express);
 
     app.use(app.router);
