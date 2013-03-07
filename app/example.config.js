@@ -1,18 +1,19 @@
 module.exports = {
-	port: 5000,
-	lastfm: {
+    port: 5000,
+    lastfm: {
 
-	},
-	twitter: {
+    },
+    twitter: {
 
-	},
-	github: {
+    },
+    github: {
 
-	},
-	instagram: {
+    },
+    instagram: {
 
-	},
-	tumblr: {
-
-	}
-}
+    },
+    tumblr: {
+        blog: "blog.willwashburn.com",
+        consumer_key: "put the key here bro"
+    }
+};
