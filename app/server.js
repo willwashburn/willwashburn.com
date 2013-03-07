@@ -1,4 +1,5 @@
 var express = require('express'),
+    _ = require('underscore'),
     path = require('path'),
     fs = require('fs'),
     mongoose = require('mongoose'),
@@ -25,13 +26,13 @@ app.configure(function() {
     app.set('view engine', 'html');
     app.set('views', __dirname + '/views/');
 
-  app.use(app.router);
+    app.use(app.router);
 
     app.use(function(req, res, next) {
         console.log('%s %s', req.method, req.url);
         next();
     });
-    
+
     app.use(express.static(__dirname + '../../public'));
 
     app.use(express.errorHandler({

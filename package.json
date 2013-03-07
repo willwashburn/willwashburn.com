@@ -15,10 +15,10 @@
 		"express-hbs":"x",
 		"path":"~0.4.9",
 		"mongoose":"~3.5.5",
+		"request":"x",
 		"lastfm":"0.8.x",
 		"twit":"x",
 		"github":"x",
-		"instagram-node-lib":"x",
 		"tumblr":"x"
 	},
 	"engines": {
