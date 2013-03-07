@@ -3,6 +3,7 @@ module.exports = function(app) {
     var config = require('../config').tumblr,
         _ = require('underscore'),
         Tumblr = require('tumblr').Tumblr,
+        request = require('request');
 
     app.get('/blog', function(req, res) {
 
