@@ -1,58 +1,104 @@
 //Colors
-$blue-1:#252160;
-$blue-2:#2A378E;
-$blue-3:#1A74BA;
-$blue-4:#25A8DF;
+$blues:#252160 #2A378E #1A74BA #25A8DF #51CFE8;
+$reds:#BD1D2C #ED3F35 #F5911D #F9AE3F #F9C853;
+$greens:#006737 #009244 #36B249 #8AC43E #AFDF62;
+$white: #FFF;
 
-@mixin color-block {
+@mixin color-block($color,$level) {
 	width:50px;
 	padding:0;
 	margin:0;
-	overflow: none;
-	text-indent: -999px;
+	background:nth($color,$level);
+	height:15px;
 }
 
 .skills {
-	ul {
-		margin:0;
+
+	table {
 		padding:0;
-		list-style: none;
+		margin:0;
+		border:none;
 
-		li {
-			display: block;
-			float: left;
-			margin-bottom:3px;
-			height:12px;
-
+		tr {
+			height: 10px;
 		}
 
-		.title {
+		th {
 			color:#999;
 			text-transform: capitalize;
 			padding-right: 10px;
 			width:100px;
+			vertical-align: center;
 
 		}
-
 	}
 
-	.dece,.solid,.good,.better,.great,.crap {
-		@include color-block;
+	td.crap {
+		@include color-block($white,1);
 	}
 
-	.blues {
-		.dece {
-			background:$blue-1;
-		}
-		.solid {
-			background: $blue-2;
-		}
-		.good{
-			background: $blue-3;
-		}
-		.better {
-			background: $blue-4;
-		}
+	//Blue
+	.blue td.dece {
+		@include color-block($blues,1);
+
 	}
+	.blue td.solid {
+		@include color-block($blues,2);
+	}
+
+	.blue td.good {
+		@include color-block($blues,3);
+	}
+
+	.blue td.better {
+		@include color-block($blues,4);
+	}
+
+	.blue td.awesome {
+		@include color-block($blues,5);
+	}
+
+    //Red
+    .red td.dece {
+    	@include color-block($reds,1);
+    }
+
+    .red td.solid {
+    	@include color-block($reds,2);
+    }
+
+    .red td.good {
+    	@include color-block($reds,3);
+    }
+
+    .red td.better {
+    	@include color-block($reds,4);
+    }
+
+    .red td.awesome {
+    	@include color-block($reds,5)
+    }
+
+    //Green
+    .green td.dece {
+    	@include color-block($greens,1);
+    }
+
+    .green td.solid {
+    	@include color-block($greens,2);
+    }
+
+    .green td.good {
+    	@include color-block($greens,3);
+    }
+
+    .green td.better {
+    	@include color-block($greens,4);
+    }
+
+    .green td.awesome {
+    	@include color-block($greens,5);
+    }
+
 }
 
