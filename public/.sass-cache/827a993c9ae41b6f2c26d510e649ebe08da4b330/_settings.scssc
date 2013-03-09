@@ -1,7 +1,7 @@
 3.2.6 (Media Mark)
-8735ce0b3c7bc776be66a1d0b2768deedb053390
+75183efbdfbce6d11fd6fc0e94fabd897e45b671
 o:Sass::Tree::RootNode
-:@template"ƒw// Required global settings and mixins for Foundation
+:@template"€w// Required global settings and mixins for Foundation
 @import "foundation/foundation-global";
 
 // Settings file to override Foundation variables
@@ -18,7 +18,7 @@
 // $em-base: 16px;
 
 // We use these to control various global styles
-// $body-bg: #fff;
+//$body-bg: #000;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -31,7 +31,7 @@
 // $text-direction: ltr;
 
 // We use these as default colors throughout
-// $primary-color: #2ba6cb;
+ $primary-color: #4970AF;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
@@ -990,7 +990,7 @@
 // $topbar-media-query: "only screen and (min-width "#{$topbar-breakpoint}")";
 
 :
-@linei:@options{ :@has_childrenT:@children[¾o:Sass::Tree::CommentNode
+@linei:@options{ :@has_childrenT:@children[Ào:Sass::Tree::CommentNode
 :@value["=/* Required global settings and mixins for Foundation */;i;@;
 [ :
 @type:silento:Sass::Tree::ImportNode:@imported_filename"!foundation/foundation-global;0;i;@:@imported_file0;
@@ -1008,8 +1008,8 @@
 ;["`/* This is the default html and body font-size for the base em value.
  * $em-base: 16px; */;i;@;
 [ ;;o;
-;["ï/* We use these to control various global styles
- * $body-bg: #fff;
+;["î/* We use these to control various global styles
+ *$body-bg: #000;
  * $body-font-color: #222;
  * $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
  * $body-font-weight: normal;
@@ -1021,11 +1021,16 @@
 ;["S/* We use these to control text direction settings
  * $text-direction: ltr; */;i ;@;
 [ ;;o;
-;["Ÿ/* We use these as default colors throughout
- * $primary-color: #2ba6cb;
- * $secondary-color: #e9e9e9;
+;["4/* We use these as default colors throughout */;i#;@;
+[ ;;o:Sass::Tree::VariableNode;i$:@guarded0;@:
+@expro:Sass::Script::Color	;0;i$;@:@attrs{	:	bluei¯:rediN:
+alphai:
+greeniu;
+[ :
+@name"primary-coloro;
+;["[/* $secondary-color: #e9e9e9;
  * $alert-color: #c60f13;
- * $success-color: #5da423; */;i#;@;
+ * $success-color: #5da423; */;i%;@;
 [ ;;o;
 ;["†/* We use these to make sure border radius matches unless we want it different.
  * $global-radius: 3px;

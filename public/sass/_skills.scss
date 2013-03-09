@@ -1,0 +1,58 @@
+//Colors
+$blue-1:#252160;
+$blue-2:#2A378E;
+$blue-3:#1A74BA;
+$blue-4:#25A8DF;
+
+@mixin color-block {
+	width:50px;
+	padding:0;
+	margin:0;
+	overflow: none;
+	text-indent: -999px;
+}
+
+.skills {
+	ul {
+		margin:0;
+		padding:0;
+		list-style: none;
+
+		li {
+			display: block;
+			float: left;
+			margin-bottom:3px;
+			height:12px;
+
+		}
+
+		.title {
+			color:#999;
+			text-transform: capitalize;
+			padding-right: 10px;
+			width:100px;
+
+		}
+
+	}
+
+	.dece,.solid,.good,.better,.great,.crap {
+		@include color-block;
+	}
+
+	.blues {
+		.dece {
+			background:$blue-1;
+		}
+		.solid {
+			background: $blue-2;
+		}
+		.good{
+			background: $blue-3;
+		}
+		.better {
+			background: $blue-4;
+		}
+	}
+}
+
