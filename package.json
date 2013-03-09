@@ -21,6 +21,15 @@
 		"github":"x",
 		"tumblr":"x"
 	},
+	"devDependencies": {
+		"grunt":"~0.4.0",
+		"grunt-contrib-jshint":"~0.1.1",
+		"grunt-contrib-nodeunit":"~0.1.2",
+		"grunt-contrib-uglify":"x",
+		"grunt-contrib-watch":"x",
+		"grunt-contrib-concat":"x"
+
+	},
 	"engines": {
 		"node":"0.8.x",
 	    "npm":"1.1.x"
