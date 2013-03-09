@@ -18,13 +18,13 @@ app.configure(function() {
 
     //Use handlebars.js
     app.engine('html', hbs.express3({
-        partialsDir: __dirname + '/views/partials',
-        layoutsDir: __dirname + '/views/layouts',
-        defaultLayout: __dirname + '/views/layouts/public.html'
+        partialsDir: __dirname + '/../public/html/partials',
+        layoutsDir: __dirname + '/../public/html/layouts',
+        defaultLayout: __dirname + '/../public/html/layouts/public.html' 
     }));
 
     app.set('view engine', 'html');
-    app.set('views', __dirname + '/views/');
+    app.set('views', __dirname + '/../public/html/');
 
     app.use(app.router);
 
