@@ -16,7 +16,7 @@ $white: #FFF;
 
 	table {
 		padding:0;
-		margin:0;
+		margin:0 0 3px 0;
 		border:none;
 
 		tr {
@@ -26,8 +26,8 @@ $white: #FFF;
 		th {
 			color:#999;
 			text-transform: capitalize;
-			padding-right: 10px;
 			width:100px;
+			max-width: 100px;
 			vertical-align: center;
 
 		}
