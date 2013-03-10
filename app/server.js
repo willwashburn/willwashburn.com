@@ -20,7 +20,7 @@ app.configure(function() {
     app.engine('html', hbs.express3({
         partialsDir: __dirname + '/../public/html/partials',
         layoutsDir: __dirname + '/../public/html/layouts',
-        defaultLayout: __dirname + '/../public/html/layouts/public.html' 
+        defaultLayout: __dirname + '/../public/html/layouts/public.html'
     }));
 
     app.set('view engine', 'html');

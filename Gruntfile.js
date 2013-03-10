@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         project: {
-            js_src: 'public/js/src'
+            js_src: 'public/js/backbone'
         },
         pkg: grunt.file.readJSON('package.json'),
         concat: {
