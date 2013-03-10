@@ -2,16 +2,12 @@ var _ = require('underscore');
 
 module.exports = {
     model: require('../models/skill'),
-    data: {
-        blue: [],
-        red: [],
-        green: []
-    },
+    columns: [],
     prepare_set: function(color, data) {
 
-        _this = module.exports;
+        var _this = module.exports,
+            table = [];
 
-        _this.data[color] = [];
 
         _.each(data[color], function(row) {
             var skill = new _this.model.defaults();
@@ -36,9 +32,29 @@ module.exports = {
                 skill.level_5 = 'awesome';
             }
 
-            _this.data[color].push(skill);
+            table.push(skill);
 
         });
 
+        return table;
+
     },
+    prepare: function(colors, database) {
+        var _this = module.exports,
+            columns = [];
+
+        _.each(colors, function(color) {
+
+            var skills = _this.prepare_set(color, database);
+            columns.push({
+                color: color,
+                skills: skills
+            });
+        });
+
+        _this.columns = columns;
+
+        return columns;
+
+    }
 };

@@ -13,27 +13,15 @@
                 skills
             </h2>
             <div class="row">
+                {{#columns}}
                 <div class="small-4 columns">
-                    {{#blue}}
                     <div class="row">
-                        {{> skills_table}}
+                        <table class="{{color}}">
+                            {{#skills}} {{> skill_row}} {{/skills}}
+                        </table>
                     </div>
-                    {{/blue}}
                 </div>
-                <div class="small-4 columns">
-                    {{#red}}
-                    <div class="row">
-                        {{> skills_table}}
-                    </div>
-                    {{/red}}
-                </div>
-                <div class="small-4 columns">
-                    {{#green}}
-                    <div class="row">
-                        {{> skills_table}}
-                    </div>
-                    {{/green}} 
-                </div>
+                {{/columns}}
             </div>
         </div>
     </div>
