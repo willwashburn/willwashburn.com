@@ -50,10 +50,10 @@ module.exports = {
             skill: 'Adobe Fireworks',
             level: 2
         }, {
-            skill: 'Adobe Photoshop',
+            skill: 'Photoshop',
             level: 1
         }, {
-            skill: 'PhoneGap / Cordova',
+            skill: 'PhoneGap',
             level: 2
         }, {
             skill: 'Objective-C',

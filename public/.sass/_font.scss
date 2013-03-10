@@ -1,0 +1,18 @@
+@font-face {
+  font-family: HelveticaNeueLight;
+  src: local("Helvetica Neue Light"),
+       local("HelveticaNeue-Light");
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'HelveticaNeueLight', Arial, Helvetica;
+	color:#4770AD;
+}
+
+h2 {
+	font-weight: lighter;
+	padding-left:0;
+	padding-right:0;
+	margin-left:0;
+	margin-right: 0;
+}
