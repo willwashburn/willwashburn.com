@@ -7,7 +7,6 @@ var express = require('express'),
     router = require('./routes'),
     config = require('./config');
 
-
 var app = express();
 
 app.configure(function() {
@@ -18,13 +17,13 @@ app.configure(function() {
 
     //Use handlebars.js
     app.engine('html', hbs.express3({
-        partialsDir: __dirname + '/../public/html/partials',
-        layoutsDir: __dirname + '/../public/html/layouts',
-        defaultLayout: __dirname + '/../public/html/layouts/public.html'
+        partialsDir: __dirname + config.view_path + '/partials',
+        layoutsDir: __dirname + config.view_path + '/layouts',
+        defaultLayout: __dirname + config.view_path + '/layouts/public.html'
     }));
 
     app.set('view engine', 'html');
-    app.set('views', __dirname + '/../public/html/');
+    app.set('views', __dirname + config.view_path);
 
     app.use(app.router);
 
