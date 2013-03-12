@@ -16,20 +16,16 @@ footer {
 h1.logo {
 	color:#FFF;
 	font-size:emCalc(26px);
-
 	background: $primary-color;
 	padding:11px 20px 11px 11px;
-	position: fixed;
-	top:20px;
 	z-index: 100;
+	width:280px;
 	display: block;
 
 }
 
 .milkman {
-	max-height: 485px;
 	overflow: hidden;
-
 	img {
 		margin: 0 auto;
 	}

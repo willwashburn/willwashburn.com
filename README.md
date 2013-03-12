@@ -7,6 +7,7 @@ Built with..
 * Express.js
 * Underscore.js
 * Handlebars
+* Foundation (http://foundation.zurb.com/)
 * SASS
 * Grunt.js
 
