@@ -47,7 +47,7 @@ module.exports = {
 
         ],
         "green": [{
-            skill: 'Adobe Fireworks',
+            skill: 'Fireworks',
             level: 2
         }, {
             skill: 'Photoshop',

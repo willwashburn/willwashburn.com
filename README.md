@@ -24,6 +24,9 @@ todo list
 
 * add links to instagram photos
 * auto-update twitter bio
+* make hashtag grey to match twitter client
+* add padding to table th so it lines up
+
 
 
 ###Features
