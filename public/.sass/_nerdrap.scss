@@ -1,0 +1,41 @@
+.nerdrap {
+	img {
+		margin:0 auto;
+	}
+
+	blockquote {
+		font-size:emCalc(30px);
+		color:#444;
+		line-height: 1.2;
+		padding:0 30px 0 70px;
+		border: 0;
+		text-align: left;
+		display: block;
+		margin-top:30px;
+		position: relative;
+	}
+
+.author {
+		color:#999;
+		text-align: right;
+		margin-top: 40px;
+
+	}
+
+}
+
+.startquote,.endquote {
+	position:absolute;
+	text-indent: -999px;
+	overflow: hidden;
+}
+
+.startquote {
+	top:-20px;
+	left:0;
+}
+
+.endquote {
+	bottom:-20px;
+	right:0;
+}
