@@ -16,15 +16,12 @@ module.exports = function(app) {
 
         var response = {};
 
-        skills.prepare(['blue', 'red', 'green'], database.skills);
-
-        response.skills = skills;
 
         request({
             uri: config.instagram.api + 'users/' + config.instagram.user_id + '/media/recent?count=10&access_token=' + config.instagram.access_token
-        }, function(error, response, body) {
+        }, function(error, ig_response, body) {
 
-            if (!error && response.statusCode == 200) {
+            if (!error && ig_response.statusCode == 200) {
 
 
                 var photo_feed = JSON.parse(body);
@@ -112,10 +109,14 @@ module.exports = function(app) {
 
                     post = _.first(tumblr_response.posts);
 
-                    response.post_title=post.title;
-                    response.post = S(post.body).truncate(500,'...<a href="'+ post.post_url +'" class="read_more">read more</a>').s;
+                    response.post_title = post.title;
+                    response.post = S(post.body).truncate(500, '...<a href="' + post.post_url + '" class="read_more">read more</a>').s;
 
-                    console.log(response.post);
+
+                    skills.prepare(['blue', 'red', 'green'], database.skills);
+
+                    response.columns = skills.columns;
+                    console.log(response.skills);
 
                     res.render('index', response);
 

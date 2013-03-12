@@ -1,0 +1,18 @@
+.tldr {
+	position: relative;
+	.head-pop {
+		position:absolute;
+		z-index: 10;
+		margin-left: emCalc(-250px);
+
+	}
+	img.show-for-small {
+		margin-left:emCalc(-100px);
+	}
+
+	.social {
+		a {
+			display: block;
+		}
+	}
+}
