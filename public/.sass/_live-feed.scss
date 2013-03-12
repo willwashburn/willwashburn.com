@@ -9,4 +9,13 @@
 		margin-bottom:20px;
 		display: block;
 	}
+
+	.instagram-feed {
+		.columns { 
+			padding:emCalc(2px);
+		}
+		.columns.set-1 {
+			padding-top:0;
+		}
+	}
 }
