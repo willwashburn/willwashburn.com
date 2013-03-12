@@ -48,4 +48,5 @@ To add..
 	->CampusButler
 * foursquare perhaps?
 * blog view
+* hover over milkman fly to other side
 

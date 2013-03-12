@@ -1,5 +1,6 @@
 .tldr {
 	position: relative;
+	margin-top:10px;
 	.head-pop {
 		position:absolute;
 		z-index: 10;
@@ -8,11 +9,49 @@
 	}
 	img.show-for-small {
 		margin-left:emCalc(-100px);
+		margin-top:10px;
+	}
+
+	h2 {
+		line-height: 0.5;
+	}
+
+	p {
+		font-size: emCalc(12px);
+		color:#999;
 	}
 
 	.social {
 		a {
 			display: block;
 		}
+	}
+
+	blockquote {
+		font-size:emCalc(40px);
+		color:#444;
+		line-height: 1.2;
+		padding:0;
+		border: 0;
+		text-align: left;
+		display: block;
+		margin-top:30px;
+		position: relative;
+	}
+
+	.startquote,.endquote {
+		position:absolute;
+		text-indent: -999px;
+		overflow: hidden;
+	}
+
+	.startquote {
+		top:-20px;
+		left:-70px;
+	}
+
+	.endquote {
+		bottom:-40px;
+		right:-20px;
 	}
 }
