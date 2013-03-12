@@ -5,6 +5,7 @@ var config = require('../config'),
     Tumblr = require('tumblr').Tumblr,
     request = require('request'),
     _ = require('underscore'),
+    S = require('string'),
     moment = require('moment');
 
 //lol wut
@@ -112,7 +113,7 @@ module.exports = function(app) {
                     post = _.first(tumblr_response.posts);
 
                     response.post_title=post.title;
-                    response.post = post.body;
+                    response.post = S(post.body).truncate(500,'...<div class="read_more">read more</div>').s;
 
                     console.log(response.post);
 
