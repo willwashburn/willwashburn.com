@@ -20,6 +20,12 @@ todo list
 ->	move html views / partials back to app folder and use grunt to concat all templates into single file for backbone to load
 ->	move client side js to app folder and change grunt settings to reflect new changes
 
+##Minor 
+
+* add links to instagram photos
+* auto-update twitter bio
+
+
 ###Features
 
 To add..
@@ -38,4 +44,5 @@ To add..
 	->Tug-O-Learn
 	->CampusButler
 * foursquare perhaps?
+* blog view
 
