@@ -2,6 +2,7 @@ var config = require('../config'),
     database = require('../data'),
     skills = require('../collections/skills'),
     Twit = require('twit'),
+    Tumblr = require('tumblr').Tumblr,
     request = require('request'),
     _ = require('underscore'),
     moment = require('moment');
@@ -47,7 +48,7 @@ module.exports = function(app) {
                 var photo_set_2 = photos.splice(0, 4);
                 photos.unshift(blank_photo, blank_photo);
                 var photo_set_3 = photos.splice(0, 4);
-                photos.unshift(blank_photo,blank_photo,blank_photo);
+                photos.unshift(blank_photo, blank_photo, blank_photo);
 
                 response.instagram = [{
                     "photos": photo_set_1
@@ -58,11 +59,6 @@ module.exports = function(app) {
                 }, {
                     "photos": photos
                 }];
-
-
-
-
-
 
             }
 
@@ -107,16 +103,31 @@ module.exports = function(app) {
 
                 response.tweets = tweets;
 
-                res.render('index', response);
+                var blog = new Tumblr(config.tumblr.blog, config.tumblr.consumer_key);
+
+                blog.text({
+                    limit: 1
+                }, function(error, tumblr_response) {
+
+                    post = _.first(tumblr_response.posts);
+
+                    response.post_title=post.title;
+                    response.post = post.body;
+
+                    console.log(response.post);
+
+                    res.render('index', response);
+
+
+                });
+
+
+
 
             });
 
         });
 
-    });
-
-    app.get('/branded', function(req, res) {
-        res.render('branded');
     });
 
 };
