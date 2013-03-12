@@ -113,7 +113,7 @@ module.exports = function(app) {
                     post = _.first(tumblr_response.posts);
 
                     response.post_title=post.title;
-                    response.post = S(post.body).truncate(500,'...<div class="read_more">read more</div>').s;
+                    response.post = S(post.body).truncate(500,'...<a href="'+ post.post_url +'" class="read_more">read more</a>').s;
 
                     console.log(response.post);
 

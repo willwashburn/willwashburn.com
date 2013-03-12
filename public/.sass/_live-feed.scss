@@ -72,6 +72,8 @@
 	}
 
 	.blog-feed {
+		@include clearfix;
+		
 		.read_more {
 			float:right;
 			color:darken(#D9D9D9,10%);
