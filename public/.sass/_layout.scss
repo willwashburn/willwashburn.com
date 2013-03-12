@@ -1,5 +1,5 @@
 html, body {
-	background:url('/img/white_wall_hash_@2X.png');
+	background:url('/img/bg/fabric_of_squares_gray.png');
 	padding:0;
 	margin: 0;
 }
@@ -10,6 +10,17 @@ footer {
 	padding:50px 0;
 	.columns {
 		font-size: emCalc(11px);
+	}
+}
+
+.splash {
+
+	position: relative;
+
+	#logo {
+		position: absolute;
+		top: 20px;
+
 	}
 }
 

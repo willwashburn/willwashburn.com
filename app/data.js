@@ -68,6 +68,22 @@ module.exports = {
             skill: 'Git Puns',
             level: 99
         }]
+    },
+    "projects": [{
+        "project":'socialblendr',
+        "name": "Social Blendr",
+        "thumbs": ['sb-1.png', 'sb-2.png', 'sb-3.png', 'sb-4.png'],
+        "description": "Social Blendr is the best way to meet new people. We create connections with people online and get them together in real life.",
+        "built": "HTML5",
+        "featured": [
+
+        ],
+        "url":"www.socialblendr.com"
     }
+
+    ],
+    "nerdraps": [
+
+    ]
 
 };
