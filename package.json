@@ -13,13 +13,14 @@
 		"underscore":"x",
 		"fs":"x",
 		"express-hbs":"x",
+		"moment":"~2.x",
 		"path":"~0.4.9",
 		"mongoose":"~3.5.5",
 		"request":"x",
 		"lastfm":"0.8.x",
-		"twit":"x",
 		"github":"x",
-		"tumblr":"x"
+		"tumblr":"x",
+		"twit":"x"
 	},
 	"devDependencies": {
 		"grunt":"~0.4.0",
