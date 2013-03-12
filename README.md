@@ -22,18 +22,20 @@ todo list
 
 ###Features
 
-->	add google voice widget using node voice npm
-->	add lastfm recently listend to tracks
-->	add github recently commited
-->	add instagram photos recently taken in image viewer that is mobile cool
-->	add recent tweets view (static)
-->	add streaming to recent tweets
-->	add blog view
-->	swipe through blog on mobile
--> 	portfolio of sites
+To add..
+*	add google voice widget using node voice npm
+*	add lastfm recently listend to tracks
+*	add github recently commited
+*	add instagram photos recently taken in image viewer that is mobile cool
+*	add recent tweets view (static)
+*	add streaming to recent tweets
+*	add blog view
+*	swipe through blog on mobile
+* 	portfolio of sites
 	->socialblendr
 	->connectedgreek
 	->GV-Later
 	->Tug-O-Learn
 	->CampusButler
-	->
+* foursquare perhaps?
+
