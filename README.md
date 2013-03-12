@@ -17,8 +17,8 @@ todo list
 ---------
 ###Grunt
 
-->	move html views / partials back to app folder and use grunt to concat all templates into single file for backbone to load
-->	move client side js to app folder and change grunt settings to reflect new changes
+* move html views / partials back to app folder and use grunt to concat all templates into single file for backbone to load
+* move client side js to app folder and change grunt settings to reflect new changes
 
 ###Minor 
 
