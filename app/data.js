@@ -98,7 +98,7 @@ module.exports = {
         "what": "American wine distributor in northern China",
         "how": "What started as a conversation over dinner that China's middle class was booming turned into a solid plan of action to sell wine there. We contacted wineries across the US and offered to distribute the wine in Beijing, China where we had personal contacts.",
         "my_role": "I have family in China that did the initial introductions and my co-founder had experience selling wine. I focused on logistics and planning as I had no real wine knowledge.",
-        "highlights": "I flew half way across the world to sell something I don't drink in a language I never spoke; selling doesn't scare me anymore. Also, I have quite a few stories to share from the experience (including smuggling 40 bottles of wine through customs). Ultimately we decided selling wine was something we didn't want to do, but agree there is a large market that is under-served."
+        "highlights": "I flew to the opposite side of the world to sell something I don't drink in a language I never spoke; selling doesn't scare me anymore. Also, I have quite a few stories to share from the experience (including smuggling 40 bottles of wine through customs). Ultimately we decided selling wine was something we didn't want to do, but agree there is a large market that is under-served."
     }, {
         "project": 'willigant',
         "name": 'WilliGant',
@@ -113,7 +113,11 @@ module.exports = {
         "project": 'tugolearn',
         "name": 'Tug-O-Learn',
         "thumbs": ['tug-3.jpg', 'tug-1.png', 'tug-2.png', 'tug-4.gif'],
-        "has_logo": true
+        "has_logo": true,
+        "what":"iPhone application using a Sphero ball to get kids excited about math. Players fastest to answer a question have the ball roll towards them in a game of tug-o-war.",
+        "how":"PhoneGap & javascript, Sphero ball, built during a hackathon",
+        "my_role":"On a team of three, I built the PhoneGap application and connected it to the ball / got the ball moving (OMG SO PUNNY)",
+        "highlights":"We won the hackathon, with a $1,000 prize and sphero balls. Our presentation was pretty bad considering we'd pulled an all-nighter, but it ended up a great experience."
     }, {
         "project": 'gvlater',
         "name": 'GV-Later',
