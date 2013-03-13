@@ -122,7 +122,11 @@ module.exports = {
         "project": 'gvlater',
         "name": 'GV-Later',
         "thumbs": ['gv-1.png', 'gv-2.png'],
-        "has_logo": true
+        "has_logo": true,
+        "what":"Boomerang for Google Voice SMS. Set a time and a message, and the app sends the SMS from your number",
+        "how":"PHP,Custom PHP GoogleVoice class,HTML,CSS,Twitter Bootstrap, cron, Linode VPS with centOS",
+        "my_role":"Built the GoogleVoice class from endpoints found using GoogleVoice's chrome extension",
+        "highlights":"I taught a fitness class in central park somewhat early on Saturday mornings. To get people to come to the class, I would always text them the morning of to remind them. I built this so I could focus on breakfast the morning of instead of texting 1000 different people."
     }, {
         "project": 'thecampusbutler',
         "name": 'The Campus Butler',
