@@ -1,20 +1,19 @@
 <div class="white seperator">
     <div class="row">
+        <a id="skills"></a>
         <div class="small-12 columns skills">
             <h2>
                 skills
             </h2>
-            <div class="row">
-                {{#columns}}
-                <div class="large-4 small-12 columns">
-                    <div class="row">
-                        <table class="{{color}}">
-                            {{#skills}} {{> skill_row}} {{/skills}}
-                        </table>
-                    </div>
+            {{#columns}}
+            <div class="large-4 small-12 columns">
+                <div class="row">
+                    <table class="{{color}}">
+                        {{#skills}} {{> skill_row}} {{/skills}}
+                    </table>
                 </div>
-                {{/columns}}
             </div>
+            {{/columns}}
         </div>
     </div>
 </div>
