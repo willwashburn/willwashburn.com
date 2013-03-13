@@ -90,6 +90,16 @@ module.exports = {
         "my_role": "It started as a website for my own fraternity and quickly became my full time job out of college. I earned my stripes on this project building my own framework and drafting the designs for each and every client. I also built a javascript page editor that allowed clients to update the webiste on their own.",
         "highlights": "I was able to provide for more clients the more I automated processes. What started as 'client websites' quickly became a SASS as I started to love making myself more efficient through code. Building ConnectedGreek solidified my love for building software."
     }, {
+        "project": 'finewines',
+        "name": 'Fine Wines',
+        "thumbs": ['fw-2.jpg', 'fw-3.jpg', 'fw-4.jpg', 'fw-1.png'],
+        "has_logo": true,
+        "url": "finewines.willigant.com/Fitzpatrick/",
+        "what": "American wine distributor in northern China",
+        "how": "What started as a conversation over dinner that China's middle class was booming turned into a solid plan of action to sell wine there. We contacted wineries across the US and offered to distribute the wine in Beijing, China where we had personal contacts.",
+        "my_role": "I have family in China that did the initial introductions and my co-founder had experience selling wine. I focused on logistics and planning as I had no real wine knowledge.",
+        "highlights": "I flew half way across the world to sell something I don't drink in a language I never spoke; selling doesn't scare me anymore. Also, I have quite a few stories to share from the experience (including smuggling 40 bottles of wine through customs). Ultimately we decided selling wine was something we didn't want to do, but agree there is a large market that is under-served."
+    }, {
         "project": 'willigant',
         "name": 'WilliGant',
         "thumbs": ['wg-2.png', 'wg-3.png', 'wg-6.png', 'wg-4.png'],
@@ -99,12 +109,6 @@ module.exports = {
         "how": "HTML,CSS,Javascript,Adobe Fireworks, Google Apps",
         "my_role": "Build websites and hope to get paid!",
         "highlights": "It was rewarding helping people learn to leverage technology to better help their business. It was also a learning experience in invoicing."
-    }, {
-        "project": 'finewines',
-        "name": 'Fine Wines',
-        "thumbs": ['fw-2.jpg', 'fw-3.jpg', 'fw-4.jpg', 'fw-1.png'],
-        "has_logo": true,
-        "url": "finewines.willigant.com/Fitzpatrick/"
     }, {
         "project": 'tugolearn',
         "name": 'Tug-O-Learn',
