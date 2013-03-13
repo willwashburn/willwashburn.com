@@ -4,8 +4,8 @@ var express = require('express'),
     fs = require('fs'),
     mongoose = require('mongoose'),
     hbs = require('express-hbs'),
-    router = require('./routes'),
-    config = require('./config');
+    router = require('../app/routes'),
+    config = require('../app/config');
 
 var app = express();
 
