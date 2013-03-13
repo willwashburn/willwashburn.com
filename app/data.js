@@ -109,7 +109,7 @@ module.exports = {
     }, {
         "project": 'thecampusbutler',
         "name": 'The Campus Butler',
-        "thumbs": ['cb-1.png'],
+        "thumbs": ['cb-1.png','cb-2.png'],
         "has_logo": true
     }],
     "nerdraps": [
