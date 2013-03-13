@@ -28,14 +28,21 @@
                 <tbody>
                     <tr>
                         <th>
-                            <a id="{{project}}"></a>name
+                            <a id="{{project}}"></a>
+                            name
                         </th>
                         <td>
                             <a href="//{{url}}" class="
-        			{{#if has_logo}}
-        			logo coke {{project}}
-        			{{/if}}
-        			"> {{name}} </a>
+							{{#if has_logo}}
+							logo
+							{{/if}}
+
+							"> {{#if has_logo}}
+							<img src="/img/logos/{{project}}.png" />
+							{{else}}
+							{{name}}
+							{{/if}}
+							</a>
                         </td>
                     </tr>
                     <tr>
@@ -83,6 +90,5 @@
             </ul>
         </div>
     </div>
-    
     {{/projects}}
 </div>
