@@ -81,13 +81,13 @@ module.exports = {
         "url": "www.socialblendr.com"
     },{
         "project":'connectedgreek',
-        "name":'ConnectedGreek'
+        "name":'Connected Greek'
     },{
         "project":'willigant',
         "name":'WilliGant'
     }, {
         "project":'finewines',
-        "name":'WilliGant Fine Wines'
+        "name":'Fine Wines'
     }, {
         "project":'tug-o-learn',
         "name":'Tug-O-Learn'

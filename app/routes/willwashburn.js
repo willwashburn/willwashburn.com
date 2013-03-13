@@ -116,7 +116,8 @@ module.exports = function(app) {
                     skills.prepare(['blue', 'red', 'green'], database.skills);
 
                     response.columns = skills.columns;
-                    console.log(response.skills);
+                    response.projects = database.projects;
+                    response.projectCount = response.projects.length;
 
                     res.render('index', response);
 

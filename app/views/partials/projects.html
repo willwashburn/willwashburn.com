@@ -1,7 +1,19 @@
 <div class="white seperator">
-    <div class="row">
-        <h2>
-            projects
+    <div class="row projects">
+        <div class="small-12 large-2 columns">
+            <h2>
+                projects
+            </h2>
+        </div>
+        <div class="small-12 large-10 columns nav">
+        	<div class="buffer hide-for-small">&nbsp;</div>
+            <ul class="large-block-grid-{{projectCount}} small-block-grid-1">
+                {{#projects }}
+                <li>
+                    <a href="#{{name}}"> {{name}}</a>
+                </li>
+                {{/projects }}
+            </ul>
+        </div>
     </div>
-</div>
 </div>
