@@ -70,7 +70,7 @@ module.exports = function(app) {
 
             T.get('statuses/user_timeline', {
                 screen_name: config.screen_name,
-                count: 4
+                count: 3
             }, function(err, reply) {
 
                 var tweets = [];
