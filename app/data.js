@@ -131,7 +131,11 @@ module.exports = {
         "project": 'thecampusbutler',
         "name": 'The Campus Butler',
         "thumbs": ['cb-1.png', 'cb-2.png'],
-        "has_logo": true
+        "has_logo": true,
+        "what":"College textbook sales and delivery, local food delivery and laundry service",
+        "how":"Students pre-ordered textbooks through my site and I would purchase them online at large discounts. I was able to save students money and have a high profit margin at the same time. We also took food orders from local restaurants and delivered them. We had also laundry pick up / drop off service. Everything we did, we dressed up as butlers.",
+        "my_role":'My first startup! I built the website and a team of 6 to execute a long, thought out business plan. This is where I first learned the utility of business plans (or the lack therof).',
+        "highlights":"I knew we had been having success when our service caught the attention of the university and university owned book store. I was marched into the dean's office and threatened with expulsion for vague handbook violations related to our business. Ultimately, we failed as a service because we never focused enough on doing one thing really well. Most of my time was spent on the website and learning how to program, when I should have focused on increasing sales."
     }],
     "nerdraps": [
 
