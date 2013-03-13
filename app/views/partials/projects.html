@@ -9,7 +9,7 @@
             <div class="buffer hide-for-small">
                 &nbsp;
             </div>
-            <ul class="large-block-grid-{{projectCount}} small-block-grid-1">
+            <ul class="large-block-grid-{{projectCount}} small-block-grid-2">
                 {{#projects}}
                 <li>
                     <a href="#{{project}}"> {{name}}</a>
@@ -19,6 +19,9 @@
         </div>
     </div>
     {{#projects}}
+    <div class="row divider">
+        <hr />
+    </div>
     <div class="row content">
         <div class="small-12 large-8 columns">
             <table>
@@ -30,7 +33,7 @@
                         <td>
                             <a href="//{{url}}" class="
         			{{#if has_logo}}
-        			logo {{project}}
+        			logo coke {{project}}
         			{{/if}}
         			"> {{name}} </a>
                         </td>
@@ -80,8 +83,6 @@
             </ul>
         </div>
     </div>
-    <div class="row divider">
-        <hr />
-    </div>
+    
     {{/projects}}
 </div>

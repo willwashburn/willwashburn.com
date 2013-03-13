@@ -75,7 +75,7 @@ module.exports = {
         "has_logo": true,
         "what": "Social Blendr is the best way to meet new people. We create connections with people online and get them together in real life.",
         'how': "HTML5, CSS, PHP, Javascript, PhoneGap, PHP websockets(!), Twitter Bootstrap, LESS, Tropo",
-        'my_role': "My ‘founder scars’ come from Social Blendr. I put my blood, sweat and tears into this project; it was truly a life changing experience. I architected, designed, coded and was involved in every stage of the product. Mentored my co-founder as he learned to code.",
+        'my_role': "My ‘founder scars’ come from Social Blendr. I put my blood, sweat and tears into this project; it was truly a life changing experience. I architected, designed, coded and was involved in every stage of the product. I also mentored my co-founder as he learned to code. Ultimately, we failed but I learned so much along the way it's not how I view it.",
         'highlights': "We created 7 versions of a web app, a PHP websockets powered chat mobile application, a SMS check-in system, a HTML5 canvas drawing game,",
         "thumbs": ['sb-1.png','sb-2.png','sb-3.png','sb-4.png'],
         "url": "www.socialblendr.com"

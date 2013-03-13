@@ -1,4 +1,5 @@
 .projects {
+	padding-top:20px;
 
 	.nav {
 		.buffer {
@@ -28,8 +29,10 @@
 	}
 
 	.content {
-		margin-top:20px;
-		
+		margin-top:25px;
+
+		.logo {display: block;}
+
 		table {
 			border:0;
 
