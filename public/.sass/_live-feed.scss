@@ -74,9 +74,13 @@
 	.blog-feed {
 		@include clearfix;
 		
+		color: #999;
+		font-size: emCalc(12px);
+
 		.read_more {
+			@include clearfix;
 			float:right;
-			color:darken(#D9D9D9,10%);
+			
 		}
 	}
 }
