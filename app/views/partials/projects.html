@@ -13,7 +13,7 @@
                 <ul class="large-block-grid-{{projectCount}} small-block-grid-2">
                     {{#projects}}
                     <li>
-                        <a href="#{{project}}"> {{name}}</a>
+                        <a id="nav-{{project}}" href="#{{project}}"> {{name}}</a>
                     </li>
                     {{/projects}}
                 </ul>
@@ -21,11 +21,11 @@
         </div>
     </div>
     {{#projects}}
-    <div class="row divider">
+    <div class="row divider divider-{{project}}">
         <hr />
     </div>
     <div class="row content">
-        <div class="small-12 large-8 columns">
+        <div class="small-12 large-8 columns ">
             <table>
                 <tbody>
                     <tr>
