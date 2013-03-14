@@ -1,21 +1,23 @@
 <div class="white seperator projects">
-    <div class="row ">
-        <div class="small-12 large-2 columns">
-            <h2>
-                projects
-            </h2>
-        </div>
-        <div class="small-12 large-10 columns nav">
-            <div class="buffer hide-for-small">
-                &nbsp;
+    <div class="sticky">
+        <div class="row nav">
+            <div class="small-12 large-2 columns">
+                <h2>
+                    projects
+                </h2>
             </div>
-            <ul class="large-block-grid-{{projectCount}} small-block-grid-2">
-                {{#projects}}
-                <li>
-                    <a href="#{{project}}"> {{name}}</a>
-                </li>
-                {{/projects}}
-            </ul>
+            <div class="small-12 large-10 columns">
+                <div class="buffer hide-for-small">
+                    &nbsp;
+                </div>
+                <ul class="large-block-grid-{{projectCount}} small-block-grid-2">
+                    {{#projects}}
+                    <li>
+                        <a href="#{{project}}"> {{name}}</a>
+                    </li>
+                    {{/projects}}
+                </ul>
+            </div>
         </div>
     </div>
     {{#projects}}
@@ -33,16 +35,16 @@
                         </th>
                         <td>
                             <a href="//{{url}}" class="
-							{{#if has_logo}}
-							logo
-							{{/if}}
+                            {{#if has_logo}}
+                            logo
+                            {{/if}}
 
-							"> {{#if has_logo}}
-							<img src="/img/logos/{{project}}.png" />
-							{{else}}
-							{{name}}
-							{{/if}}
-							</a>
+                            "> {{#if has_logo}}
+                            <img src="/img/logos/{{project}}.png" />
+                            {{else}}
+                            {{name}}
+                            {{/if}}
+                            </a>
                         </td>
                     </tr>
                     <tr>

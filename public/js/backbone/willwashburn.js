@@ -1,4 +1,4 @@
-var WillWashburn = new Marionette.Application();
+/*var WillWashburn = new Marionette.Application();
 
 WillWashburn.addRegions({
 	header:'#header',
@@ -9,3 +9,4 @@ WillWashburn.addRegions({
 WillWashburn.on('initialize:after', function() {
 	Backbone.history.start();
 }); 
+*/
