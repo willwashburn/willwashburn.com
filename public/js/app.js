@@ -4,7 +4,7 @@ ww.project_offset = 70;
 
 $('document').ready(function() {
 
-    $('.sticky').waypoint(function(direction) {
+    $('#sticky').waypoint(function(direction) {
 
         if (direction === 'down') {
 
@@ -28,8 +28,18 @@ $('document').ready(function() {
 
     $('.tldr').waypoint(function(direction) {
 
+        if(direction === 'down') {
+            $('#sticky-wrapper').hide();
+            $('#sticky').find('.nav').removeClass('active');
+            $('#sticky').css('position', 'relative').appendTo('.projects');
+        } else if (direction === 'up') {
+            $('#sticky-wrapper').show();
+            $('#sticky').find('.nav').addClass('active');
+            $('#sticky').prependTo('.projects').css('position','fixed');
+        }
+
     }, {
-        offset: 50
+        offset: 150
     });
 
 
@@ -80,7 +90,7 @@ $('document').ready(function() {
         toggleNav('thecampusbutler', direction, 'gvlater');
     }, {
         offset: ww.project_offset
-        
+
     });
 });
 
