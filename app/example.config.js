@@ -1,6 +1,6 @@
 module.exports = {
     port: 5000,
-    view_path: 'views',
+    view_path: '/views/',
     lastfm: {
 
     },
