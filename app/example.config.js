@@ -5,6 +5,12 @@ module.exports = {
 
     },
     twitter: {
+        username:'willwashburn',
+        consumer_key:"",
+        consumer_secret:"",
+        access_token: "",
+        access_token_secret: "",
+        api:"https://api.twitter.com/1.1/"
 
     },
     github: {
