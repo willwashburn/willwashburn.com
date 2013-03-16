@@ -38,11 +38,13 @@
 		}
 
 	}
+	.content.active td { color:#222;}
 
 	.content {
 		margin-top:25px;
 
 		.logo {display: block;}
+
 
 		table {
 			border:0;
@@ -73,6 +75,8 @@
 				width: 75%;
 				max-width: 100%;
 			}
+
+
 		}
 
 

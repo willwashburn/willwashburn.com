@@ -62,7 +62,7 @@ module.exports = {
             skill: 'Hackathons',
             level: 5
         }, {
-            skill: 'Basketballin',
+            skill: 'Dance moves',
             level: 5
         }, {
             skill: 'Git Puns',

@@ -10,8 +10,9 @@ $('document').ready(function() {
 
             var wrapper = '<div id="sticky-wrapper" style="width:' + $(this).width() + 'px; height:' + $(this).outerHeight(true) + 'px">&nbsp;</div>';
 
-            $(this).before(wrapper).css('position', 'fixed').css('top', '0');
+            $(this).before(wrapper);
 
+            $(this).css('position', 'fixed').css('top', '0');
             $(this).find('.nav').addClass('active');
 
         } else if (direction === 'up') {
@@ -22,20 +23,24 @@ $('document').ready(function() {
             $(this).css('position', 'relative');
         }
 
-
         console.log(direction);
     });
 
     $('.tldr').waypoint(function(direction) {
 
-        if(direction === 'down') {
+        if (direction === 'down') {
             $('#sticky-wrapper').hide();
             $('#sticky').find('.nav').removeClass('active');
             $('#sticky').css('position', 'relative').appendTo('.projects');
+
+            $('.head-pop').animate({
+
+            });
+
         } else if (direction === 'up') {
             $('#sticky-wrapper').show();
             $('#sticky').find('.nav').addClass('active');
-            $('#sticky').prependTo('.projects').css('position','fixed');
+            $('#sticky').prependTo('.projects').css('position', 'fixed');
         }
 
     }, {
@@ -96,13 +101,21 @@ $('document').ready(function() {
 
 
 var toggleNav = function(project, direction, above) {
+
         $('.nav .active').removeClass('active');
+        $('.projects .row .active').removeClass('active');
 
         if (direction === 'down') {
             $('#nav-' + project).addClass('active');
+            $('.content-' + project).addClass('active');
+
+
         } else if (direction === 'up') {
             $('#nav-' + above).addClass('active');
             $('#nav-' + project).removeClass('active');
+
+            $('.content-' + project).removeClass('active');
+            $('.content-' + above).addClass('active');
         }
 
     };
