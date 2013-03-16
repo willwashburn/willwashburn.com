@@ -1,4 +1,4 @@
 .DS_Store
-app/config.jsx
+app/config.js
 artwork
 public/.sass-cache
