@@ -1,12 +1,12 @@
-var config = require('../config'),
+var config   = require('../config'),
     database = require('../data'),
-    skills = require('../collections/skills'),
-    Twit = require('twit'),
-    Tumblr = require('tumblr').Tumblr,
-    request = require('request'),
-    _ = require('underscore'),
-    S = require('string'),
-    moment = require('moment');
+    skills   = require('../collections/skills'),
+    Twit     = require('twit'),
+    Tumblr   = require('tumblr').Tumblr,
+    request  = require('request'),
+    _        = require('underscore'),
+    S        = require('string'),
+    moment   = require('moment');
 
 //lol wut
 //probably should clean this up
