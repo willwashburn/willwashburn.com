@@ -1,13 +1,16 @@
 module.exports = function(app) {
 
-    var config = require('../config'),
-        _ = require('underscore'),
-        
+    var config  = require('../config'),
+        _       = require('underscore'),
+    	Tumblr  = require('tumblr').Tumblr,
         request = require('request');
 
     app.get('/blog', function(req, res) {
 
-        var blog = new Tumblr(config.tumblr.blog, config.tumblr.consumer_key);
+        var blog = new Tumblr(
+        	config.tumblr.blog,
+        	config.tumblr.consumer_key
+        );
 
         blog.text({
             limit: 1
