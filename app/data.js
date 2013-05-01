@@ -139,6 +139,58 @@ module.exports = {
     }],
     "nerdraps": [
 
+    ],
+    "bucketList": [
+        ["Go skydiving",true],
+        ['Visit 6 continents',3,7],
+        ['Go on a canopy tour',false],
+        ['Visit Australia',false],
+        ['Pop some caps at a gun range',true],
+        ['Win a hackathon',true],
+        ['Live in San Francisco',false],
+        ['Live in another country',false],
+        ['Fly a plane',false],
+        ['Go in a hot air baloon',false],
+        ['Learn salsa dancing',false],
+        ['Take a hot Yoga class',true],
+        ['Get drunk',false],
+        ['Drive over 150 mph',false],
+        ['Go to the Grand Canyon',false],
+        ['Spend $5,000 in Vegas',false],
+        ['Get 1,000 downloads in the app store',false],
+        ['Visit 50  US states',
+            { 'type': 'states',
+                'visited':[
+                    'MA',
+                    'NY',
+                    'RI',
+                    'CT',
+                    'VT',
+                    'NH',
+                    'AK',
+                    'WV',
+                    'VA',
+                    'NJ',
+                    'MD',
+                    'PA',
+                    'KY',
+                    'LA',
+                    'AZ',
+                    'ME',
+                    'FL',
+                    'GA',
+                    'NC',
+                    'SC',
+                    'TN',
+                    'TX'
+                ]
+            }
+        ],
+        ['Learn to ski',true],
+        ['Learn to snowboard',true],
+        ['Go bungee jumping',false],
+        ['Visit Denver',false],
+        ['Live in union square',false]
     ]
 
 };
